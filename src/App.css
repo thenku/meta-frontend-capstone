@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+
+
+h1{
+  font-family: Markazi;
+  font-weight: 400;
+  font-size: 64pt;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2.subtitle{
+  font-family: Markazi;
+  font-weight: 500;
+  font-size: 40pt;
+}
+h3.leadtext{
+  font-family: Karla;
+  font-weight: 400;
+  font-size: 18pt;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  font-family: Karla;
+  font-weight: 800;
+  font-size: 20pt;
+
+}
+h3{
+  font-family: Karla;
+  font-weight: 800;
+  font-size: 16pt;
+}
+h3.cardtitle{
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 18pt;
+}
+p{
+  font-family: Karla;
+  font-weight: 500;
+  color: #edefee;
+  font-size: 16pt;
+}
+.highlight{
+
+}
+.container{
+  max-width: calc(100% - 2rem);
+  width: 100%;
+  margin: 0 auto;
+}
+.sheet{
+  max-width: 1280px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header .sheet{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 50px;
+}
+header .lcontainer{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+header img{
+  /* object-fit: contain; */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header nav ul{
+  list-style: none;
+  display: flex;
+  gap:1.5rem;
+  font-family: Karla;
+}
+nav ul a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.bg1{
+  background-color: #495e57;
 }
