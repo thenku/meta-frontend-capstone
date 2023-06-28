@@ -34,6 +34,7 @@ h3{
   font-weight: 800;
   font-size: 16pt;
   margin:0;
+  color: black;
 }
 h3.cardtitle{
   font-family: Karla;
@@ -43,7 +44,7 @@ h3.cardtitle{
 p{
   font-family: Karla;
   font-weight: 500;
-  color: #edefee;
+  /* color: #edefee; */
   font-size: 16pt;
 }
 .highlight{
@@ -59,7 +60,9 @@ p{
   width: calc(100% - 2rem);
   margin: 0 auto;
 }
-
+header{
+  overflow: hidden;
+}
 header .sheet{
   display: flex;
   justify-content: space-between;
@@ -89,7 +92,7 @@ nav ul a{
   background-color: #495e57;
 }
 
-a.button, a[role="button"]{
+a.button, a[role="button"], input[type="submit"]{
   background-color: #f4ce14;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -98,8 +101,9 @@ a.button, a[role="button"]{
   text-decoration: none;
   font-weight: bold;
   margin: 1rem 0;
+  cursor: pointer;
 }
-a.button:hover, a[role="button"]:hover{
+a.button:hover, a[role="button"]:hover, input[type="submit"]:hover{
   background-color: white;
 }
 .flb{
@@ -108,4 +112,40 @@ a.button:hover, a[role="button"]:hover{
   align-items: center;
   flex-wrap: wrap;
   gap:1rem;
+  width: 100%;
+}
+.flc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cols3{
+  display: flex;
+  gap:30px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.cols3 > * {
+  flex: 0 200px calc(100% / 3 - 20px);
+
+}
+.card1{
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #edefee;
+}
+.card1 .content{
+  padding:2rem;
+}
+.card1 .price{
+  color: #ee9972;
+}
+.card1 img{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.headerImg img{
+  border-radius: 1rem;
+  margin-bottom: -8rem;
 }
