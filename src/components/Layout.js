@@ -10,9 +10,9 @@ export default function Layout(props) {
        </main>
        <footer>
         <div className="flc sheet" style={{padding: "1rem"}}>
-          <copyright>
-              &copy;Copyright Little Lemon {new Date().getFullYear()}
-          </copyright>
+          <small>
+              &copy; Copyright Little Lemon {new Date().getFullYear()}
+          </small>
         </div>
        </footer>
     </>

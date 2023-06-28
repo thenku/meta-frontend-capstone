@@ -7,9 +7,10 @@ import './fonts/Karla-Regular.ttf';
 import './fonts/MarkaziText-Regular.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+        <App />
   </React.StrictMode>
 );
 
