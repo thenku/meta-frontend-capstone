@@ -126,8 +126,10 @@ a.button:hover, a[role="button"]:hover, input[type="submit"]:hover{
   align-items: stretch;
 }
 .cols3 > * {
-  flex: 0 200px calc(100% / 3 - 20px);
-
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 200px;
+  flex-basis: calc(100% / 3 - 20px);
 }
 .card1{
   border-radius: 1rem;
@@ -148,4 +150,15 @@ a.button:hover, a[role="button"]:hover, input[type="submit"]:hover{
 .headerImg img{
   border-radius: 1rem;
   margin-bottom: -8rem;
+}
+.chakra-form-control{
+  width: 100%;
+}
+input, select{
+  width: 100%;
+  font-size: 1rem;
+  padding:4px;
+}
+.chakra-form__error-message{
+  color:red;
 }

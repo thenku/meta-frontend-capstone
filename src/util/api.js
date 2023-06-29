@@ -28,5 +28,13 @@ class APIClass{
         return true;
     };
 }
-const API = new APIClass();
+var API = new APIClass();
 export default API;
+
+export function updateTimes(state, action){
+    const date = new Date(action);
+    return API.fetchAPI(date);
+  }
+export function initializeTimes(){
+    return API.fetchAPI(new Date())
+}

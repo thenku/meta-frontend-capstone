@@ -10,7 +10,7 @@ export default function Nav(props) {
                             Home
                         </li>
                     </a>
-                    <a href="/">
+                    {/* <a href="/">
                         <li>
                             About
                         </li>
@@ -19,13 +19,13 @@ export default function Nav(props) {
                         <li>
                             Menu
                         </li>
-                    </a>
+                    </a> */}
                     <a href="/booking">
                         <li>
                             Reservations
                         </li>
                     </a>
-                    <a href="/">
+                    {/* <a href="/">
                         <li>
                             Order Online
                         </li>
@@ -39,7 +39,7 @@ export default function Nav(props) {
                         <li>
                             Booking
                         </li>
-                    </a>
+                    </a> */}
                 </ul>
             </nav>
     )
